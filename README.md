@@ -8,4 +8,6 @@ Welcome to the Machine Learning Data Streaming Code Challenge. This project util
 ---
 # Objectives
 
+---
+# Workflow
 
