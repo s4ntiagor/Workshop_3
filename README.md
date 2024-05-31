@@ -46,6 +46,7 @@ In this project, we aim to predict the happiness score of different countries us
 git clone https://github.com/s4ntiagor/Workshop_3.git
 ```
 ## Step 2: Create your db_config.json
+In the main folder Create a db_config.json file and copy the credentials of your database into it.
 ```plaintext
 {
     "host": "host", 
@@ -53,4 +54,16 @@ git clone https://github.com/s4ntiagor/Workshop_3.git
     "password": "password",
     "database": "your_database"
 }
+```
+## Step 3: Create your Virtual Environment
+```plaintext
+python -m venv venv
+```
+## Step 4: Start your virtual environment
+```plaintext
+./venv/Scripts/activate
+```
+## Step 5: Installs the requirements
+```plaintext
+pip install -r requirements.txt
 ```
