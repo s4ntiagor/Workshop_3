@@ -93,7 +93,7 @@ def ETL():
     
     df_all = pd.concat([df_2015, df_2016, df_2017, df_2018, df_2019], ignore_index=True)
     
-    columns_to_drop = ['Country','Happiness_Rank']
+    columns_to_drop = ['country','happiness_Rank']
     
     drop_columns(df,columns_to_drop)
 
@@ -103,7 +103,7 @@ def ETL():
 
 def training(df):
     X = df[['economy_gdp_per_capita', 'social_support', 'health_life_expectancy', 'freedom', 'corruption', 'generosity']]
-    y = df['Happiness_Score']
+    y = df['happiness_score']
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=59)
     return df.loc[y_test.index]
 
