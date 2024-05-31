@@ -30,7 +30,7 @@ def kafka_consumer():
 
     for message in consumer:
         df = pd.json_normalize(data=message.value)
-        df['happiness_prediction'] = model.predict(df[['Economy_GDP_per_Capita', 'Social_Support', 'Health_Life_Expectancy', 'Freedom', 'Corruption', 'Generosity']])
+        df['happiness_prediction'] = model.predict(df[['economy_gdp_per_capita', 'social_support', 'health_life_expectancy', 'freedom', 'corruption', 'generosity']])
         insert_data(df.iloc[0])
         print("Data inserted into database Postgres:\n", df)
 
