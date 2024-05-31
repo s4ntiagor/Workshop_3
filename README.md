@@ -22,20 +22,20 @@ In this project, we aim to predict the happiness score of different countries us
 ---
 # Repository Structure
 ```plaintext
-Workshop_3
-├── data                                # Contains CSV data files
-├── main                                # Contains the project's main source code
-│   ├── db_conn.py                      # Script for database connection
-│   ├── kafka_consumer.py               # Script for the Kafka consumer
-│   ├── kafka_producer.py               # Script for the Kafka producer
-│   └── Kafka.py                        # Kafka utility script
-├── Model
-│   └── random_forest_model.pkl         # Pickle file with the trained Random Forest model
-├── notebooks                           # Contains Jupyter notebooks for data analysis
-│   └── EDA.ipynb                       # Notebook for Exploratory Data Analysis
-├── .gitignore                          # File for ignoring files in version control
-├── README.md                           # This README file
-├── requirements.txt                    # Requirements file for installing Python dependencies
-└── docker-compose.yml                  # Docker Compose configuration file
+📦Workshop_3
+├── 📂data                                # Contains CSV data files
+├── 📂main                                # Contains the project's main source code
+│   ├── 📄db_conn.py                      # Script for database connection
+│   ├── 📄kafka_consumer.py               # Script for the Kafka consumer
+│   ├── 📄kafka_producer.py               # Script for the Kafka producer
+│   └── 📄Kafka.py                        # Kafka utility script
+├── 📂Model
+│   └── 📄random_forest_model.pkl         # Pickle file with the trained Random Forest model
+├── 📂notebooks                           # Contains Jupyter notebooks for data analysis
+│   └── 📄EDA.ipynb                       # Notebook for Exploratory Data Analysis
+├── 📄.gitignore                          # File for ignoring files in version control
+├── 📄README.md                           # This README file
+├── 📄requirements.txt                    # Requirements file for installing Python dependencies
+└── 📄docker-compose.yml                  # Docker Compose configuration file
 ```
 
