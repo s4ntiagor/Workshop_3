@@ -21,6 +21,7 @@ In this project, we aim to predict the happiness score of different countries us
 
 ---
 # Repository Structure
+```plaintext
 Workshop_3
 ├── data                                # Contains CSV data files
 ├── main                                # Contains the project's main source code
@@ -36,5 +37,5 @@ Workshop_3
 ├── README.md                           # This README file
 ├── requirements.txt                    # Requirements file for installing Python dependencies
 └── docker-compose.yml                  # Docker Compose configuration file
-
+```
 
