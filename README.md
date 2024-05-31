@@ -45,3 +45,12 @@ In this project, we aim to predict the happiness score of different countries us
 ```plaintext
 git clone https://github.com/s4ntiagor/Workshop_3.git
 ```
+## Step 2: Create your db_config.json
+```plaintext
+{
+    "host": "host", 
+    "user": "user",
+    "password": "password",
+    "database": "your_database"
+}
+```
