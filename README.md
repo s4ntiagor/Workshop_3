@@ -67,3 +67,30 @@ python -m venv venv
 ```plaintext
 pip install -r requirements.txt
 ```
+## Step 6: Setting up Kafka
+Run Docker Compose
+```
+docker-compose up
+```
+
+After Access Kafka Container
+```
+docker exec -it kafka bash
+```
+
+Create Kafka Topic
+```
+kafka-topics --bootstrap-server kafka --create --topic kafka-new_happy
+```
+This command sets up a Kafka topic that will be used for streaming happiness data.
+
+### Step 8: Running the Streming:
+Once you have set up Kafka, open two new terminals and run the following command in each terminal:
+```
+python kafka_consumer.py
+```
+```
+python kafka_producer.py
+```
+---
+And that's it! Thank you for checking this workshop, have great day!!
