@@ -38,4 +38,10 @@ In this project, we aim to predict the happiness score of different countries us
 ├── 📄requirements.txt                    # Requirements file for installing Python dependencies
 └── 📄docker-compose.yml                  # Docker Compose configuration file
 ```
+---
+# How to run this proyect
 
+## Step 1: Clone the Repository
+```plaintext
+git clone https://github.com/s4ntiagor/Workshop_3.git
+```
