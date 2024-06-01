@@ -4,7 +4,10 @@ import joblib
 import pandas as pd
 import logging
 from time import sleep
-from db_conn import insert_data
+from main.db_conn import insert_data
+
+joblib_file = "C:/Users/valen/OneDrive/Documentos/ETL/workshop_3/Workshop_3/Model/random_forest_model.pkl"
+model = joblib.load(joblib_file)
 
 def kafka_producer(row):
     producer = KafkaProducer(
@@ -30,7 +33,11 @@ def kafka_consumer():
 
     for message in consumer:
         df = pd.json_normalize(data=message.value)
-        df['happiness_prediction'] = model.predict(df[['economy_gdp_per_capita', 'social_support', 'health_life_expectancy', 'freedom', 'corruption', 'generosity']])
-        insert_data(df.iloc[0])
-        print("Data inserted into database Postgres:\n", df)
-
+        print("Received message:", df)
+        try:
+            df['happiness_prediction'] = model.predict(df[['economy_gdp_per_capita', 'social_support', 'health_life_expectancy', 'freedom', 'corruption', 'generosity']])
+            print("Prediction added:", df)
+            insert_data(df.iloc[0])
+            print("Data inserted into database Postgres:\n", df)
+        except Exception as e:
+            print("Error processing message:", e)

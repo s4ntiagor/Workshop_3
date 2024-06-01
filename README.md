@@ -26,8 +26,6 @@ In this project, we aim to predict the happiness score of different countries us
 ├── 📂data                                # Contains CSV data files
 ├── 📂main                                # Contains the project's main source code
 │   ├── 📄db_conn.py                      # Script for database connection
-│   ├── 📄kafka_consumer.py               # Script for the Kafka consumer
-│   ├── 📄kafka_producer.py               # Script for the Kafka producer
 │   └── 📄Kafka.py                        # Kafka utility script
 ├── 📂Model
 │   └── 📄random_forest_model.pkl         # Pickle file with the trained Random Forest model
@@ -36,7 +34,9 @@ In this project, we aim to predict the happiness score of different countries us
 ├── 📄.gitignore                          # File for ignoring files in version control
 ├── 📄README.md                           # This README file
 ├── 📄requirements.txt                    # Requirements file for installing Python dependencies
-└── 📄docker-compose.yml                  # Docker Compose configuration file
+├── 📄docker-compose.yml                  # Docker Compose configuration file          
+├── 📄kafka_consumer.py                   # Script for the Kafka consumer
+└── 📄kafka_producer.py                   # Script for the Kafka producer
 ```
 ---
 # How to run this proyect
